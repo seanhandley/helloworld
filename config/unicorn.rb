@@ -10,7 +10,7 @@ stdout_path "/var/log/rails/unicorn.log"
 
 # Unicorn socket
 listen "/var/run/rails/unicorn.sock"
-listen 8080
+listen "0.0.0.0:8080"
 
 # Number of processes
 # worker_processes 4
