@@ -7,13 +7,13 @@ default: &default
 
 development:
   <<: *default
-  database: management_console_development
+  database: hello_world_development
 
 test:
   <<: *default
-  database: management_console_test
+  database: hello_world_test
 
 production:
   <<: *default
-  database: management_console_production
+  database: hello_world_production
   password: <%= ENV["DB_PASSWORD"] %>
